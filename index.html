@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratham Desai | Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Outfit', 'system-ui', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        ink: '#1a1a1b',
+                        stone: '#2d2d2f',
+                        warm: '#e8e4df',
+                        cream: '#f5f2ed',
+                        rust: '#b85c38',
+                        sage: '#6b7b6e',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .text-balance { text-wrap: balance; }
+    </style>
+</head>
+<body class="bg-cream text-ink font-sans antialiased">
+
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/90 border-b border-stone/20 font-mono text-sm">
+        <div class="max-w-6xl mx-auto px-6 lg:px-10 py-4 flex justify-between items-center">
+            <a href="#" class="font-serif text-xl font-semibold tracking-tight text-ink">Pratham Desai</a>
+            <div class="flex gap-8">
+                <a href="#about" class="text-stone hover:text-ink transition">About</a>
+                <a href="#experience" class="text-stone hover:text-ink transition">Experience</a>
+                <a href="#projects" class="text-stone hover:text-ink transition">Projects</a>
+                <a href="#skills" class="text-stone hover:text-ink transition">Skills</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="about" class="min-h-screen flex flex-col lg:flex-row lg:min-h-0 lg:pt-28 pb-16 lg:pb-24">
+        <div class="flex-1 max-w-6xl mx-auto w-full px-6 lg:px-10 flex flex-col lg:flex-row gap-12 lg:gap-16 items-center lg:items-end">
+            <div class="order-2 lg:order-1 lg:flex-1 pt-20 lg:pt-0">
+                <p class="font-mono text-rust text-sm uppercase tracking-widest mb-4">CS & Philosophy</p>
+                <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl font-semibold leading-[1.1] text-balance mb-6">
+                    Pratham Desai
+                </h1>
+                <p class="font-sans text-stone text-lg max-w-xl leading-relaxed mb-10">
+                    Computer Science & Philosophy student at Rutgers University.
+                    Specializing in distributed systems and the ethical frameworks of Artificial Intelligence.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="https://github.com/prathamdd" class="inline-block bg-ink text-cream px-5 py-2.5 font-mono text-sm hover:bg-stone transition">GitHub</a>
+                    <a href="mailto:prathamd260@gmail.com" class="inline-block border border-stone/40 px-5 py-2.5 font-mono text-sm hover:border-ink hover:text-ink transition">Contact</a>
+                </div>
+            </div>
+            <div class="order-1 lg:order-2 flex-shrink-0 w-56 h-56 sm:w-72 sm:h-72 lg:w-80 lg:h-80">
+                <img src="profile.jpg" alt="Pratham Desai" class="w-full h-full object-cover border-2 border-ink shadow-[6px_6px_0_0_#1a1a1b]">
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 lg:px-10 space-y-28 pb-24">
+
+        <section id="experience">
+            <h2 class="font-serif text-3xl sm:text-4xl font-semibold mb-14 text-ink">Experience</h2>
+            <div class="space-y-0 border-l-2 border-stone/30 pl-6 sm:pl-8 ml-1">
+                <div class="relative pb-14">
+                    <span class="absolute left-[-2.25rem] top-0 w-3 h-3 bg-rust rounded-full border-2 border-cream"></span>
+                    <div class="flex flex-wrap justify-between gap-2 items-baseline mb-1">
+                        <h3 class="font-serif text-xl font-semibold italic">Undergraduate Research Assistant</h3>
+                        <span class="font-mono text-stone text-sm">Jan 2025 – Present</span>
+                    </div>
+                    <p class="text-rust font-medium text-sm mb-3">Rutgers University, Computer Science Dept.</p>
+                    <ul class="text-stone space-y-2 list-none">
+                        <li class="pl-4 border-l-2 border-sage/30">Analyzing failure modes in vision-language models (VLMs) across 225K+ medical images.</li>
+                        <li class="pl-4 border-l-2 border-sage/30">Developing PyTorch-based benchmarking pipelines for CLIP and BioMedCLIP performance.</li>
+                    </ul>
+                </div>
+                <div class="relative pb-2">
+                    <span class="absolute left-[-2.25rem] top-0 w-3 h-3 bg-rust rounded-full border-2 border-cream"></span>
+                    <div class="flex flex-wrap justify-between gap-2 items-baseline mb-1">
+                        <h3 class="font-serif text-xl font-semibold italic">Teaching Assistant (Data Structures)</h3>
+                        <span class="font-mono text-stone text-sm">Sep 2025 – Present</span>
+                    </div>
+                    <p class="text-rust font-medium text-sm mb-3">Rutgers University</p>
+                    <ul class="text-stone space-y-2 list-none">
+                        <li class="pl-4 border-l-2 border-sage/30">Leading weekly recitations and debugging workshops for 100+ students.</li>
+                        <li class="pl-4 border-l-2 border-sage/30">Creating instructional materials for algorithm analysis and recursion.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="font-serif text-3xl sm:text-4xl font-semibold mb-14 text-ink">Projects</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+                <article class="group bg-ink text-cream p-8 border-2 border-ink hover:shadow-[8px_8px_0_0_#6b7b6e] transition-shadow">
+                    <p class="font-mono text-sage/90 text-xs uppercase tracking-widest mb-3">.NET 9 • C# • Python • SignalR</p>
+                    <h3 class="font-serif text-2xl font-semibold mb-3">OmniStat Pipeline</h3>
+                    <p class="text-cream/80 text-sm leading-relaxed mb-6">
+                        Distributed real-time sports data platform delivering live updates with sub-second latency.
+                    </p>
+                    <a href="https://github.com/prathamdd/OmniStat" class="font-mono text-sm text-rust hover:underline">View on GitHub →</a>
+                </article>
+                <article class="group bg-ink text-cream p-8 border-2 border-ink hover:shadow-[8px_8px_0_0_#6b7b6e] transition-shadow">
+                    <p class="font-mono text-sage/90 text-xs uppercase tracking-widest mb-3">React • Node.js • JavaScript • Chart.js</p>
+                    <h3 class="font-serif text-2xl font-semibold mb-3">FPL Minileague Analyzer</h3>
+                    <p class="text-cream/80 text-sm leading-relaxed mb-6">
+                        Fantasy sports analytics dashboard used by 15+ players to visualize performance trends.
+                    </p>
+                    <a href="https://github.com/prathamdd/Data-Analyzer" class="font-mono text-sm text-rust hover:underline">View on GitHub →</a>
+                </article>
+            </div>
+        </section>
+
+        <section class="bg-stone text-cream py-16 px-8 sm:px-12 border-2 border-ink">
+            <h2 class="font-serif text-2xl sm:text-3xl font-semibold mb-4">The Philosophy Edge</h2>
+            <p class="font-sans text-cream/90 text-lg max-w-2xl leading-relaxed">
+                My dual background in Computer Science and Philosophy allows me to tackle technical problems with rigorous logical derivation and an ethical lens on system impact.
+                Whether it's modal propositional logic or distributed system architecture, I focus on building software that is as ethically sound as it is performant.
+            </p>
+        </section>
+
+        <section id="skills" class="grid lg:grid-cols-3 gap-16">
+            <div class="lg:col-span-2">
+                <h2 class="font-serif text-3xl sm:text-4xl font-semibold mb-10 text-ink">Technical Skills</h2>
+                <div class="grid sm:grid-cols-2 gap-x-12 gap-y-8">
+                    <div>
+                        <h4 class="font-mono text-xs uppercase tracking-widest text-stone mb-2">Languages</h4>
+                        <p class="text-ink">Python, JavaScript, SQL, Java, C</p>
+                    </div>
+                    <div>
+                        <h4 class="font-mono text-xs uppercase tracking-widest text-stone mb-2">Frameworks</h4>
+                        <p class="text-ink">React, .NET, Node.js, FastAPI, PyTorch</p>
+                    </div>
+                    <div>
+                        <h4 class="font-mono text-xs uppercase tracking-widest text-stone mb-2">Tools</h4>
+                        <p class="text-ink">Docker, Redis, AWS, PostgreSQL, Git</p>
+                    </div>
+                    <div>
+                        <h4 class="font-mono text-xs uppercase tracking-widest text-stone mb-2">Core Concepts</h4>
+                        <p class="text-ink">Distributed Systems, Data Analysis, AI Ethics, Symbolic Logic</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2 class="font-serif text-3xl sm:text-4xl font-semibold mb-10 text-ink">Education</h2>
+                <div class="border-l-2 border-rust pl-6">
+                    <p class="font-serif text-lg font-semibold text-ink">Rutgers University New Brunswick</p>
+                    <p class="text-stone text-sm mt-1">B.S. Computer Science</p>
+                    <p class="text-stone text-sm">B.A. Philosophy</p>
+                    <p class="font-mono text-stone text-xs mt-3">GPA: 3.5 · Expected Dec 2026</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-stone/20 py-8 text-center">
+        <p class="font-mono text-stone text-sm">© 2026 Pratham Desai</p>
+    </footer>
+
+</body>
+</html>
